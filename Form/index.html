@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zoho Corporation </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/242f32a9ce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/zoho.svg" alt="zoho" srcset="">
+        <img class="img" src="assets/tom.jpg" alt="" srcset="">
+    </header>
+    <div class="main">
+        <div id="scroll-progress-bar"></div>
+        <p
+            style="margin-bottom: 4px; font-size: 1.125rem; line-height: 1.5rem; padding: 0 2rem; word-break: break-word;">
+            Zoho Corporation | Full time
+        </p>
+        <h1
+            style="font-family: Montserrat, sans-serif; font-size: 3rem; line-height: 1.2; position: relative; font-weight: 500; word-break: break-word; margin-bottom:20px;">
+            Web Developers
+        </h1>
+        <p style="margin-bottom:10px;">Share this job with your network</p>
+        <div class="icon">
+            <a style="border-radius:50%; padding:5px; border: 1px solid black; width:35px;"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcareers.zohocorp.com%2Fjobs%2Fcareers%2F2803000614913786%2FWeb-Developers%3Fsource%3DCareerSite"
+                target="_blank"><i class="fa fa-facebook" style="color:black"></i></a>
+            <a style="border-radius:50%; padding:5px; border: 1px solid black; width:35px;"
+                href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcareers.zohocorp.com%2Fjobs%2Fcareers%2F2803000614913786%2FWeb-Developers%3Fsource%3DCareerSite&amp;text=Zoho%20Corporation%20is%20hiring%20for%20Web%20Developers.%20Know%20more%20about%20the%20job%20opening%20here%3A&amp;via=Zoho%20Corporation&amp;hashtags=ZohoCorporation"
+                target="_blank"><i class="fa fa-twitter" style="color:black;"></i></a>
+            <a style="border-radius:50%; padding:5px; border: 1px solid black; width:35px;"
+                href="https://wa.me/?text=Zoho%20Corporation%20is%20hiring%20for%20Web%20Developers.%20Know%20more%20about%20the%20job%20opening%20here%3A https%3A%2F%2Fzurl.to%2Fi68%3Fsource%3DCareerSite"
+                target="_blank"><i class="fa fa-whatsapp" style="color: black;"></i></a>
+            <a style="border-radius:50%; padding:5px; border: 1px solid black; width:35px;"
+                href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcareers.zohocorp.com%2Fjobs%2FCareers%2F2803000614913786%2FWeb-Developers%3Fsource%3DCareerSite%26t%3D492"
+                target="_blank"><i class="fa fa-linkedin" style="color:black;"></i></a>
+            <a style="border-radius:50%; padding:5px; border: 1px solid black; width:35px;"
+                href="https://telegram.me/share/url?url=https%3A%2F%2Fcareers.zohocorp.com%2Fjobs%2Fcareers%2F2803000614913786%2FWeb-Developers%3Fsource%3DCareerSite&amp;text=Zoho%20Corporation%20is%20hiring%20for%20Web%20Developers.%20Know%20more%20about%20the%20job%20opening%20here%3A"
+                target="_blank"><i class="fa fa-telegram" style="color:black;"></i></a>
+            <a style="border-radius:50%; padding:5px; border: 1px solid black; width:35px;" href="#"
+                onclick="copyPageLink(); return false;">
+                <i class="fas fa-link" style="color: black; cursor: pointer;"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Added clearPersonalDetails button inside pre -->
+    <form id="jobApplicationForm" enctype="multipart/form-data" novalidate>
+        <pre style="color: #ea5958;">
+Personal Details  <button type="text" onclick="clearPersonalDetails()">clear</button>
+        </pre>
+        <div class="name-row" style="display: flex; gap: 16px; margin-bottom: 16px;">
+            <div style="flex: 0 0 120px; height:auto;">
+                <label for="title">First Name</label>
+                <select name="title" id="title" required style="width:100%; height:40px; padding:2px 6px;">
+                    <option>Mr.</option>
+                    <option>Ms.</option>
+                    <option>Mrs.</option>
+                </select>
+            </div>
+            <div style="flex-grow: 1;">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required
+                    style="width: 100%; height:40px; padding:2px 6px; margin-top:40px;">
+            </div>
+        </div>
+        <label for="lastName">lastname</label>
+        <input type="text" name="Last Name" id="lastName" placeholder="Last Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="Email" id="email" placeholder="Email" required>
+
+        <label for="contact">Contact</label>
+        <div class="contact-group">
+            <select name="countryCode" id="countryCode" required>
+                <option value="+91">India (+91)</option>
+                <option value="+1">USA (+1)</option>
+                <option value="+44">UK (+44)</option>
+                <option value="+61">Australia (+61)</option>
+            </select>
+            <input type="text" name="contact" id="contact" placeholder="Contact Number (+country code)" required
+                pattern="[\d\+\-\s]+" title="Enter valid phone number">
+        </div>
+
+        <label for="graduationYear">Graduation</label>
+        <input type="number" name="graduationYear" id="graduationYear" placeholder="Year of Graduation" required
+            min="1900" max="2099" step="1">
+
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender" required>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <h2>Professional Details</h2>
+        <label for="experience">Experience</label>
+        <select name="experience" id="experience" required>
+            <option>Fresher</option>
+            <option>Experienced</option>
+        </select>
+
+        <label for="employer">Employer</label>
+        <input type="text" name="Employer" id="employer" placeholder="Current Employer" required>
+
+        <label for="currentCTC">Currentctc</label>
+        <input type="text" name="CurrentCTC" id="currentCTC" placeholder="Current CTC (LPA)" required
+            pattern="\d+(\.\d{1,2})?" title="Enter a valid number">
+
+        <label for="expectedCTC">Expectedctc</label>
+        <input type="text" name="expectedCTC" id="expectedCTC" placeholder="Expected CTC (LPA)" required
+            pattern="\d+(\.\d{1,2})?" title="Enter a valid number">
+
+        <label for="noticePeriod">Notice Period</label>
+        <select name="noticePeriod" id="noticePeriod" required>
+            <option>Immediate</option>
+            <option>1 Month</option>
+            <option>3 Months</option>
+        </select>
+
+        <label for="skillsInput">Skills</label>
+        <div class="skills-container" tabindex="0" id="skillsContainer">
+            <input type="text" id="skillsInput" placeholder="Type and add skills" autocomplete="off" />
+        </div>
+        <div class="suggestions" id="skillsSuggestions" style="display:none;"></div>
+
+        <label for="referral">How Did You Come Across This Vacancy?</label>
+        <select name="referral" id="referral" required>
+            <option>Referral</option>
+            <option>LinkedIn</option>
+            <option>Other</option>
+        </select>
+
+        <label for="location">Current Location</label>
+        <input type="text" name="location" id="location" placeholder="Current Location" required>
+
+        <h2>Preferred Location</h2>
+        <input type="text" class="location-search-input" id="locationSearchInput"
+            placeholder="Search and select preferred locations" autocomplete="off" />
+        <button type="button" onclick="clearPreferredLocations()">Clear Preferred</button>
+        <div class="location-checkboxes" id="locationCheckboxes">
+            <label><input type="checkbox" name="preferredLocation" value="Chennai"> Chennai</label>
+            <label><input type="checkbox" name="preferredLocation" value="Coimbatore"> Coimbatore</label>
+            <label><input type="checkbox" name="preferredLocation" value="Madurai"> Madurai</label>
+            <label><input type="checkbox" name="preferredLocation" value="Salem"> Salem</label>
+            <label><input type="checkbox" name="preferredLocation" value="Tenkasi"> Tenkasi</label>
+            <label><input type="checkbox" name="preferredLocation" value="Tirunelveli"> Tirunelveli</label>
+        </div>
+
+        <h2>Upload Your Resume</h2>
+        <label for="resume">Resume</label>
+        <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required>
+
+        <div style="display:flex; justify-content: flex-start; gap: 12px;">
+            <button type="reset">Cancel</button>
+            <button type="submit" id="submitBtn">Submit Application</button>
+        </div>
+        <button type="button" id="scrollToTopBtn" title="Go to top" onclick="scrollToTop()" style="display: none;">
+            <i style="width:30px;height:30px;border-radius:50%;" class="fa-solid fa-arrow-up"></i>
+        </button>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>

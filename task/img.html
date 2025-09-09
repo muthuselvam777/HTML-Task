@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Webpage</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .image-container img {
+            cursor: pointer;
+            transition: transform 0.3 ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <h2>Image Webpage</h2>
+        <img src="assets/MSD.jpeg" alt="Sample Placeholder Image 1" width="300px" height="300px"
+            title="This is Image 1">
+        <br><br>
+        <img src="assets/CR7.jpeg" alt="Sample Placeholder Image 2" width="300px" height="300px"
+            title="This is Image 2 with Lazy Loading" loading="lazy">
+        <br><br>
+        <a href="https://en.wikipedia.org/wiki/Sivakarthikeyan" target="_blank">
+            <img src="assets/SK.jpg" alt="Wikipedia Logo Style" width="300px" height="300px"
+                title="Click to visit Wikipedia">
+        </a>
+    </div>
+</body>
+
+</html>

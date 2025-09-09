@@ -1,0 +1,202 @@
+
+  /* body {
+    padding:0;
+    margin:0;
+} */
+
+  
+
+.container {
+    width: 750px;
+    border: 10px solid #b0bfd2;
+    margin: auto;
+    padding: 18px 30px 40px 30px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 2px 18px #b0bfd280;
+    background: linear-gradient(to right, #ffd1dc, #ccffcc, #ffd1dc, #ccffcc);
+}
+
+.watermark-logo {
+    margin:auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 350px;
+    height: 350px;
+    opacity: 0.15;
+    z-index: 1;
+    pointer-events: none;
+}
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo-left {
+    width: 85px;
+    height: 85px;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+.logo-right {
+    width: 85px;
+    height: 85px;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.college-info {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.college-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2f4277;
+    letter-spacing: 1px;
+}
+.institution {
+    font-size: 1.1em;
+    color: #6d6d6d;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.approved {
+    color: #199e47;
+    font-size: 1em;
+    font-weight: bold;
+}
+.address {
+    color: #385f93;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+.exams-toprow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-size: 1em;
+    color: #222;
+    font-weight: bold;
+}
+.gradesheet-title {
+    text-align: center;
+    color: #ba1c1c;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.cbcs {
+    text-align: center;
+    color: #ba1c1c;
+    font-size: 1.06em;
+    font-weight: bold;
+}
+
+.details-table, {
+    width: 100%;
+    border: 10px ;
+    border-collapse: collapse;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 2;
+}
+.marks-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 2;
+}
+.details-table td {
+    font-size: 0.96em;
+    padding: 2px 8px 2px 0;
+}
+.details-table .label {
+    font-weight: bold;
+    color: #1f314f;
+    width: 170px;
+}
+
+
+.marks-table th, .marks-table td {
+    border: 1px solid #aaa;
+    padding: 4px 7px;
+    font-size: 0.97em;
+    text-align: center;
+}
+.marks-table th {
+    color: #112155;
+    background: #e4eafa;
+    font-weight: bold;
+}
+.marks-table tr:last-child td {
+    border-bottom: 2px solid #555;
+}
+.marks-table .course-title {
+    text-align: left;
+    padding-left: 5px;
+}
+td[align=left] {
+    text-align: left;
+}
+
+.sem-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.98em;
+    z-index: 2;
+    position: relative;
+}
+.sem-table th, .sem-table td {
+    border: 1px solid #aaa;
+    padding: 5px 6px;
+    text-align: center;
+}
+.sem-table th {
+    background: #e4eafa;
+    color: #194f94;
+}
+
+.footer-row {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.90em;
+    position: relative;
+    z-index: 2;
+}
+.locate{
+    margin-top:20px;
+    position:absolute;
+     bottom:75px;
+}
+.seal {
+    text-align: center;
+} 
+.controller {
+    text-align: right;
+}
+
+
+/* For photo */
+.passport-photo {
+   border: 2px solid #bbb;
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: -12px;
+    position: absolute;
+    right: 6px;
+    top: 178px;
+    z-index: 40;
+}

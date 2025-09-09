@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports Table with Background</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            margin: 0;
+            background: url('assets/bg.jpg') no-repeat center center fixed; 
+            background-size: cover; 
+        }
+         th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+        } 
+        h2 {
+            margin-bottom: 20px;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sports Tournament Table</h2>
+
+    <table cellspacing="8" cellpadding="10">
+        <tr>
+            <th colspan="4">Sports Tournament Results</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Player ID</th>
+            <th rowspan="2">Player Name</th>
+            <th colspan="2">Scores</th>
+        </tr>
+        <tr>
+            <th>Football</th>
+            <th>Cricket</th>
+        </tr>
+        <tr>
+            <td>201</td>
+            <td>Rahul</td>
+            <td>2 Goals</td>
+            <td>45 Runs</td>
+        </tr>
+        <tr>
+            <td>202</td>
+            <td>Priya</td>
+            <td>1 Goal</td>
+            <td>55 Runs</td>
+        </tr>
+        <tr>
+            <td>203</td>
+            <td>Arjun</td>
+            <td>3 Goals</td>
+            <td>72 Runs</td>
+        </tr>
+    </table>
+</body>
+</html>
