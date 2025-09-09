@@ -1,195 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-‌
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout Examples</title>
     <style>
         * {
-font-weight: 600;
-text-transform: uppercase;
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-‌
 body {
-padding: 20px;
-font-family: Arial, sans-serif;
-background-color: #f8f8f8;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
 }
-‌
 .child {
-width: 400px;
-height: 300px;
-margin: 20px;
-background-color: rgb(223, 216, 216);
-border: 1px solid black;
-display: grid;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    background-color: rgb(223, 216, 216);
+    border: 1px solid black;
+    display: grid;
 }
-‌
 .section-one,
 .section-two {
-display: flex;
+    display: flex;
 }
-‌
 .innerchild,
 .innerchild-section2 {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-‌
 #child2 {
-grid-template-rows: 40px 1fr 40px;
-grid-template-areas:
-"Header"
-"Main-Content"
-"Footer";
+    grid-template-rows: 40px 1fr 40px;
+    grid-template-areas:
+        "Header"
+        "Main-Content"
+        "Footer";
 }
-‌
 #innerchild-header {
-grid-area: Header;
-background-color: gray;
+    grid-area: Header;
+    background-color: gray;
 }
-‌
 #innerchild-content {
-grid-area: Main-Content;
-background-color: white;
+    grid-area: Main-Content;
+    background-color: white;
 }
-‌
 #innerchild-footer {
-grid-area: Footer;
-background-color: gray;
+    grid-area: Footer;
+    background-color: gray;
 }
-‌
 #child3 {
-grid-template-rows: 40px 40px 1fr 40px;
-grid-template-areas:
-"Header"
-"Top-Navbar"
-"Main-Content"
-"Footer";
+    grid-template-rows: 40px 40px 1fr 40px;
+    grid-template-areas:
+        "Header"
+        "Top-Navbar"
+        "Main-Content"
+        "Footer";
 }
-‌
 #innerchild2-header {
-grid-area: Header;
-background-color: gray;
+    grid-area: Header;
+    background-color: gray;
 }
-‌
 #innerchild2-topnav {
-grid-area: Top-Navbar;
-background-color: rgb(196, 192, 192);
+    grid-area: Top-Navbar;
+    background-color: rgb(196, 192, 192);
 }
-‌
 #innerchild2-content {
-grid-area: Main-Content;
-background-color: white;
+    grid-area: Main-Content;
+    background-color: white;
 }
-‌
 #innerchild2-footer {
-grid-area: Footer;
-background-color: gray;
+    grid-area: Footer;
+    background-color: gray;
 }
-‌
 #child4 {
-grid-template-columns: 80px 1fr;
-grid-template-rows: 40px 1fr 40px;
-grid-template-areas:
-"Header Header"
-"LeftNav Main-Content"
-"Footer Footer";
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 40px 1fr 40px;
+    grid-template-areas:
+        "Header Header"
+        "LeftNav Main-Content"
+        "Footer Footer";
 }
-‌
 #innerchild3-header {
-grid-area: Header;
-background-color: gray;
+    grid-area: Header;
+    background-color: gray;
 }
-‌
 #innerchild3-leftnav {
-grid-area: LeftNav;
-background-color: rgb(178, 181, 184);
+    grid-area: LeftNav;
+    background-color: rgb(178, 181, 184);
 }
-‌
 #innerchild3-content {
-grid-area: Main-Content;
-background-color: white;
+    grid-area: Main-Content;
+    background-color: white;
 }
-‌
 #innerchild3-footer {
-grid-area: Footer;
-background-color: gray;
+    grid-area: Footer;
+    background-color: gray;
 }
-‌
 #child5 {
-grid-template-columns: 100px 1fr;
-grid-template-rows: 40px 40px 1fr 40px;
-grid-template-areas:
-"Header Header"
-"TopNav TopNav"
-"LeftNav Main-Content"
-"Footer Footer";
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 40px 40px 1fr 40px;
+    grid-template-areas:
+        "Header Header"
+        "TopNav TopNav"
+        "LeftNav Main-Content"
+        "Footer Footer";
 }
-‌
 #innerchild4-header {
-grid-area: Header;
-background-color: gray;
+    grid-area: Header;
+    background-color: gray;
 }
-‌
 #innerchild4-topnav {
-grid-area: TopNav;
-background-color: rgb(196, 192, 192);
+    grid-area: TopNav;
+    background-color: rgb(196, 192, 192);
 }
-‌
 #innerchild4-leftnav {
-grid-area: LeftNav;
-background-color: rgb(178, 181, 184);
+    grid-area: LeftNav;
+    background-color: rgb(178, 181, 184);
 }
-‌
 #innerchild4-content {
-grid-area: Main-Content;
-background-color: white;
+    grid-area: Main-Content;
+    background-color: white;
 }
-‌
 #innerchild4-footer {
-grid-area: Footer;
-background-color: gray;
+    grid-area: Footer;
+    background-color: gray;
 }
-‌
 #child6 {
-grid-template-columns: 100px 1fr 100px;
-grid-template-rows: 40px 1fr 40px;
-grid-template-areas:
-"Header Header Header"
-"LeftNav Main-Content RightNav"
-"Footer Footer Footer";
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 40px 1fr 40px;
+    grid-template-areas:
+        "Header Header Header"
+        "LeftNav Main-Content RightNav"
+        "Footer Footer Footer";
 }
-‌
 #innerchild5-header {
-grid-area: Header;
-background-color: gray;
+    grid-area: Header;
+    background-color: gray;
 }
-‌
 #innerchild5-leftnav {
-grid-area: LeftNav;
-background-color: rgb(178, 181, 184);
+    grid-area: LeftNav;
+    background-color: rgb(178, 181, 184);
 }
-‌
 #innerchild5-content {
-grid-area: Main-Content;
-background-color: white;
+    grid-area: Main-Content;
+    background-color: white;
 }
-‌
 #innerchild5-rightnav {
-grid-area: RightNav;
-background-color: rgb(196, 192, 192);
+    grid-area: RightNav;
+    background-color: rgb(196, 192, 192);
 }
-‌
 #innerchild5-footer {
-grid-area: Footer;
-background-color: gray;
+    grid-area: Footer;
+    background-color: gray;
 }
     </style>
 </head>
@@ -198,13 +166,11 @@ background-color: gray;
         <div class="child" id="child1">
             <p>Blank Canvas</p>
         </div>
-        ‌
         <div class="child" id="child2">
             <div class="innerchild" id="innerchild-header">Header</div>
             <div class="innerchild" id="innerchild-content">Content</div>
             <div class="innerchild" id="innerchild-footer">Footer</div>
         </div>
-        ‌
         <div class="child" id="child3">
             <div class="innerchild" id="innerchild2-header">Header</div>
             <div class="innerchild" id="innerchild2-topnav">Top Navbar</div>
@@ -212,7 +178,6 @@ background-color: gray;
             <div class="innerchild" id="innerchild2-footer">Footer</div>
         </div>
     </div>
-    ‌
     <div class="section-two">
         <div class="child" id="child4">
             <div class="innerchild-section2" id="innerchild3-header">Header</div>
@@ -220,7 +185,6 @@ background-color: gray;
             <div class="innerchild-section2" id="innerchild3-content">Content</div>
             <div class="innerchild-section2" id="innerchild3-footer">Footer</div>
         </div>
-        ‌
         <div class="child" id="child5">
             <div class="innerchild" id="innerchild4-header">Header</div>
             <div class="innerchild" id="innerchild4-topnav">Top Navbar</div>
@@ -228,7 +192,6 @@ background-color: gray;
             <div class="innerchild" id="innerchild4-content">Content</div>
             <div class="innerchild" id="innerchild4-footer">Footer</div>
         </div>
-        ‌
         <div class="child" id="child6">
             <div class="innerchild" id="innerchild5-header">Header</div>
             <div class="innerchild" id="innerchild5-leftnav">Left Nav</div>
@@ -238,5 +201,4 @@ background-color: gray;
         </div>
     </div>
 </body>
-
 </html>
